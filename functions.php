@@ -150,14 +150,4 @@ if ( version_compare( PHP_VERSION, '5.4', '>=' ) ) {
 	require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-elementor-pro.php';
 }
 
-// Beaver Themer compatibility requires PHP 5.3 for anonymus functions.
-if ( version_compare( PHP_VERSION, '5.3', '>=' ) ) {
-	require_once ASTRA_THEME_DIR . 'inc/compatibility/class-astra-beaver-themer.php';
-}
 
-/**
- * Load deprecated functions
- */
-require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-filters.php';
-require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-hooks.php';
-require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-functions.php';
